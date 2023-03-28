@@ -23,8 +23,9 @@ class MainActivity : ComponentActivity() {
                 ) {
                     val engine1 = Engine1()
                     val engine2 = Engine2()
-                    val car = Car(engine1)
 
+                    val car = Car()
+                    car.engine = engine1
                     car.on()
                 }
             }
