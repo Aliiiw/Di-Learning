@@ -22,7 +22,8 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
                     val engine1 = Engine1()
-                    val car = Car(engine1 = engine1)
+                    val engine2 = Engine2()
+                    val car = Car(engine1)
 
                     car.on()
                 }

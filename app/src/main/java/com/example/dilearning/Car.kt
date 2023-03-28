@@ -2,11 +2,10 @@ package com.example.dilearning
 
 import android.util.Log
 
-//constructor dependency injection
-class Car(private val engine1: Engine1) {
+class Car(private val engine: Engine) {
 
     fun on() {
-        engine1.startEngine()
+        engine.startEngine()
         Log.e("2323", "car is on")
     }
 }
