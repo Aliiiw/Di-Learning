@@ -30,6 +30,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
                     car.on()
+                    car.on1()
                 }
             }
         }
