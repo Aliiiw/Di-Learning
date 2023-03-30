@@ -5,7 +5,7 @@ import javax.inject.Inject
 import javax.inject.Named
 
 class Car @Inject constructor(
-    @Named("ElectricEngine")private val engine: Engine
+    @TestEL private val engine: Engine
     ) {
 
     fun on() {
