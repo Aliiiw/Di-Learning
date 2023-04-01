@@ -6,13 +6,15 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Named
 import javax.inject.Qualifier
+import javax.inject.Singleton
 
 @Module
-@InstallIn(SingletonComponent::class)
+@InstallIn(SingletonComponent::class)    //inja har scope mikhy mizari
 object EngineModule {
 
     @Provides
     @TestE
+    @Singleton
     fun provideTestEngine(): Engine {
         return TestEngine()
     }
